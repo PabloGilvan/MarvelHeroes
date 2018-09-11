@@ -22,6 +22,7 @@
             android:background="@color/grey"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:minHeight="@dimen/thumbnail_hero_h"
             android:scaleType="centerInside"
             android:src="@drawable/avatar_icon"
             app:layout_constraintEnd_toEndOf="parent"

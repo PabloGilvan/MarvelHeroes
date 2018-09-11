@@ -60,7 +60,7 @@ class MainActivity : AppCompatActivity(), MainView {
         this.adapter?.addData(results)
     }
 
-    private fun getState(show: Boolean): Int = if(show) View.VISIBLE else View.INVISIBLE
+    private fun getState(show: Boolean): Int = if(show) View.VISIBLE else View.GONE
 
 }
 

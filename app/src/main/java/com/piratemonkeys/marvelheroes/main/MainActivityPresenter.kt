@@ -32,7 +32,7 @@ class MainActivityPresenter(var view: MainView, var controller: MainController):
         view.showLoader(viewState == ViewState.LOADING)
         view.showNoConnectionMessage(viewState == ViewState.NO_CONNECTION)
         view.showNoContentMessage(viewState == ViewState.NO_CONTENT)
-        view.showHeroesList(viewState == ViewState.DONE)
+        view.showHeroesList(viewState == ViewState.DONE || viewState == ViewState.LOADING)
     }
 
     override fun success(response: MarvelResponse) {

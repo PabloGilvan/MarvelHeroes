@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.piratemonkeys.marvelheroes.R
 import com.piratemonkeys.marvelheroes.core.request.dto.HeroData
+import com.piratemonkeys.marvelheroes.view.custom.load
 import kotlinx.android.synthetic.main.hero_list_item.view.*
 
 class HeroesAdapter:RecyclerView.Adapter<HeroesAdapter.ViewHolder>(){
@@ -30,7 +31,7 @@ class HeroesAdapter:RecyclerView.Adapter<HeroesAdapter.ViewHolder>(){
             with(hero) {
                 hero_description_tv.text = description
                 hero_name_tv.text = name
-                //thumbnail_hero.load(thumbnail["path"]+"."+thumbnail["extension"]){request -> request.fit() }
+                thumbnail_hero.load(thumbnail["path"]+"."+thumbnail["extension"]){request -> request.fit() }
             }
         }
     }

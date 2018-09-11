@@ -1,6 +1,5 @@
 package com.piratemonkeys.marvelheroes.core.request.api
 
-import com.piratemonkeys.marvelheroes.core.request.dto.MarvelResponse
 import com.piratemonkeys.marvelheroes.core.request.dto.MarvelWrapper
 import io.reactivex.Single
 import retrofit2.http.GET

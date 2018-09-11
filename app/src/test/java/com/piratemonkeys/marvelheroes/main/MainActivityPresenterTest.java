@@ -2,20 +2,14 @@ package com.piratemonkeys.marvelheroes.main;
 
 import com.piratemonkeys.constructapp.presenter.main.MainActivityPresenter;
 import com.piratemonkeys.constructapp.view.main.MainView;
-import com.piratemonkeys.marvelheroes.core.patterns.ProcessResponse;
 
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.mockito.InOrder;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
 
-import java.util.Collections;
-
-import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.BDDMockito.given;
-import static org.mockito.Mockito.inOrder;
 import static org.mockito.Mockito.verify;
 
 @RunWith(MockitoJUnitRunner.class)

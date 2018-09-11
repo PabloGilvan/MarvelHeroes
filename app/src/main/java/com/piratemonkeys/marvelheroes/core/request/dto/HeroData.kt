@@ -1,6 +1,6 @@
 package com.piratemonkeys.marvelheroes.core.request.dto
 
-import java.util.Date
+import java.util.*
 
 /*    "path": "http://i.annihil.us/u/prod/marvel/i/mg/c/e0/535fecbbb9784",
             "extension": "jpg"*/

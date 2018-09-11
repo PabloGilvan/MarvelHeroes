@@ -1,9 +1,8 @@
 package com.piratemonkeys.marvelheroes.view.main
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.RecyclerView
 import android.view.View
 import com.piratemonkeys.constructapp.presenter.main.MainActivityPresenter
 import com.piratemonkeys.constructapp.view.main.MainView
@@ -11,7 +10,6 @@ import com.piratemonkeys.marvelheroes.R
 import com.piratemonkeys.marvelheroes.core.request.dto.HeroData
 import com.piratemonkeys.marvelheroes.main.MainController
 import com.piratemonkeys.marvelheroes.view.adapters.HeroesAdapter
-import com.piratemonkeys.marvelheroes.view.custom.picasso
 import com.piratemonkeys.marvelheroes.view.patterns.InfinityScrollLoader
 import kotlinx.android.synthetic.main.activity_main.*
 

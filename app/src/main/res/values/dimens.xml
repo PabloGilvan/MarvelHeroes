@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="default_margin">8dp</dimen>
+    <dimen name="double_margin">16dp</dimen>
+    <dimen name="thumbnail_hero_h">300dp</dimen>
+    <dimen name="thumbnail_hero_w">200dp</dimen>
+</resources>

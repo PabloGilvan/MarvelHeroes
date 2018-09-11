@@ -1,0 +1,28 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="msg_default">
+        <item name="android:layout_marginTop">@dimen/double_margin</item>
+        <item name="android:textSize">@dimen/ex_size</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="hero_label_name">
+        <item name="android:background">#bc1e1b1b</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:padding">@dimen/smallest_margin</item>
+    </style>
+
+    <dimen name="ex_size">16sp</dimen>
+    <dimen name="smallest_margin">4dp</dimen>
+</resources>

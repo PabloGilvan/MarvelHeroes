@@ -1,4 +1,4 @@
-package com.piratemonkeys.marvelheroes.view.main
+package com.piratemonkeys.marvelheroes.view.activities.main
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
@@ -8,7 +8,7 @@ import com.piratemonkeys.constructapp.presenter.main.MainActivityPresenter
 import com.piratemonkeys.constructapp.view.main.MainView
 import com.piratemonkeys.marvelheroes.R
 import com.piratemonkeys.marvelheroes.core.request.dto.HeroData
-import com.piratemonkeys.marvelheroes.main.MainController
+import com.piratemonkeys.marvelheroes.presenters.main.MainLoader
 import com.piratemonkeys.marvelheroes.view.adapters.HeroesAdapter
 import com.piratemonkeys.marvelheroes.view.patterns.InfinityScrollLoader
 import kotlinx.android.synthetic.main.activity_main.*
@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity(), MainView {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        presenter = MainActivityPresenter(this, MainController(this.applicationContext))
+        presenter = MainActivityPresenter(this, MainLoader(this.applicationContext))
         createView()
     }
 

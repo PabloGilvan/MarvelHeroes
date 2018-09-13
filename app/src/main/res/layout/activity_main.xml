@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:padding="@dimen/default_margin"
     android:orientation="vertical"
-    tools:context=".view.main.MainActivity">
+    tools:context=".view.activities.main.MainActivity">
 
     <LinearLayout
         android:id="@+id/container_internet_msg"
@@ -46,19 +46,22 @@
     <android.support.v7.widget.RecyclerView
         android:id="@+id/heroes_recycle_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
         android:layout_weight="1"
-        android:scrollbars="vertical"/>
+        android:nestedScrollingEnabled="false"
+        android:scrollbars="vertical"
+        tools:targetApi="lollipop" />
 
 
     <LinearLayout
         android:id="@+id/loading_bar_container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal">
+        android:gravity="center_horizontal"
+        android:background="@null">
 
         <android.support.v4.widget.ContentLoadingProgressBar
-            style="?android:attr/progressBarStyleLarge"
+            style="?android:attr/progressBarStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
